@@ -6,4 +6,5 @@ func init() {
 	http.Handle("/static/", http.StripPrefix("/static/", http.FileServer(http.Dir("static"))))
 
 	http.HandleFunc("/tribute", tribute)
+	http.HandleFunc("/tribute-bootstrap", tributeBootstrap)
 }
